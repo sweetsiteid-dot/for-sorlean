@@ -1,0 +1,487 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#0d0d0d;
+color:white;
+overflow-x:hidden;
+}
+
+#websiteContent{
+display:none;
+}
+
+/* PIN SCREEN */
+
+#pinScreen{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:9999;
+
+background:url("sorlean1.jpg");
+background-size:cover;
+background-position:center;
+}
+
+.pin-overlay{
+width:100%;
+height:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(8px);
+}
+
+.pin-box{
+
+width:90%;
+max-width:380px;
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.15);
+
+text-align:center;
+}
+
+.pin-box h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.pin-box h2{
+margin-bottom:15px;
+}
+
+.pin-box p{
+color:#d9d9d9;
+line-height:1.8;
+}
+
+.pin-box input{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:none;
+outline:none;
+
+border-radius:12px;
+
+background:rgba(255,255,255,.1);
+
+color:white;
+
+text-align:center;
+}
+
+.pin-box button{
+
+width:100%;
+
+padding:14px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:12px;
+
+background:white;
+
+color:black;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.pin-box button:hover{
+transform:scale(1.03);
+}
+
+.hint{
+margin-top:15px;
+opacity:.7;
+font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+padding:30px;
+
+text-align:center;
+}
+
+.hero-content{
+max-width:750px;
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:70px;
+
+margin-bottom:15px;
+}
+
+.hero h2{
+
+font-size:38px;
+
+margin-bottom:25px;
+}
+
+.hero p{
+
+line-height:2;
+
+color:#d9d9d9;
+
+margin-bottom:30px;
+}
+
+.hero button{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+background:white;
+
+color:black;
+
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.hero button:hover{
+transform:translateY(-4px);
+}
+
+/* SECTION */
+
+.section{
+
+padding:110px 20px;
+
+text-align:center;
+}
+
+.section-title{
+
+font-size:40px;
+
+margin-bottom:60px;
+
+font-family:'Playfair Display',serif;
+}
+
+/* GLASS CARD */
+
+.glass-card{
+
+max-width:850px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.1);
+
+backdrop-filter:blur(15px);
+
+line-height:2;
+}
+
+/* MEMORY WALL */
+
+.memory-wall{
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.memory-card{
+
+background:white;
+
+padding:12px;
+
+border-radius:18px;
+
+overflow:hidden;
+
+transition:.4s;
+
+box-shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+.memory-card:hover{
+
+transform:translateY(-8px);
+}
+
+.memory-card img{
+
+width:100%;
+
+height:300px;
+
+object-fit:cover;
+
+border-radius:12px;
+}
+
+.memory-card p{
+
+margin-top:12px;
+
+color:black;
+
+font-weight:600;
+}
+
+/* REASON CARDS */
+
+.cards{
+
+max-width:1200px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+}
+
+.reason-card{
+
+padding:30px;
+
+border-radius:20px;
+
+background:#171717;
+
+border:1px solid #2a2a2a;
+
+transition:.3s;
+}
+
+.reason-card:hover{
+
+transform:translateY(-8px);
+}
+
+.reason-card h3{
+
+margin:15px 0;
+}
+
+.reason-card p{
+
+color:#cfcfcf;
+}
+
+/* LETTER */
+
+.letter-box{
+
+max-width:900px;
+
+margin:auto;
+
+padding:40px;
+
+border-radius:25px;
+
+background:#171717;
+
+border:1px solid #2a2a2a;
+}
+
+.letter-box p{
+
+text-align:left;
+
+line-height:2.1;
+}
+
+/* FINAL */
+
+.final-section{
+
+padding:150px 20px;
+
+text-align:center;
+}
+
+.final-section h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+}
+
+.final-section h1{
+
+font-size:72px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:30px;
+}
+
+.final-section p{
+
+max-width:700px;
+
+margin:auto;
+
+line-height:2;
+
+color:#d9d9d9;
+}
+
+/* ENDING */
+
+.ending{
+
+padding:150px 20px;
+
+text-align:center;
+
+background:black;
+}
+
+.ending h2{
+
+font-size:48px;
+
+font-family:'Playfair Display',serif;
+
+margin-bottom:20px;
+}
+
+.ending p{
+
+margin-top:10px;
+
+color:#bdbdbd;
+}
+
+/* FLOATING HEARTS */
+
+#hearts{
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+z-index:1;
+}
+
+/* FADE ANIMATION */
+
+.fade-in{
+
+opacity:0;
+
+transform:translateY(40px);
+
+transition:all 1s ease;
+}
+
+.fade-in.show{
+
+opacity:1;
+
+transform:translateY(0);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:45px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.section-title{
+font-size:30px;
+}
+
+.final-section h1{
+font-size:45px;
+}
+
+.memory-card img{
+height:250px;
+}
+
+.letter-box{
+padding:25px;
+}
+
+  }
